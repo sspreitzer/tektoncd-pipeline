@@ -11,4 +11,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: git status
+      - name: Run on github.ref == ${{ github.ref }}
+        run: pwd; find
